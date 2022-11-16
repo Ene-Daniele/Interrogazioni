@@ -11,16 +11,17 @@ import datetime
 #TODO: Ene > Colorare i print un pochino
 
 print(Style.BRIGHT + Fore.GREEN + " « Programmatore di interrogazioni » ")
-print(Fore.WHITE + "💭 Usa 'help' per una lista di comandi", Fore.WHITE)
+print(Fore.WHITE + "[?] Usa 'help' per una lista di comandi", Fore.WHITE)
 
 while True:
     choice = input(" > ").split(" ")
     if choice[0] == "help":
-        print(Fore.CYAN + Style.BRIGHT + "help:" + Style.NORMAL + " Fa vedere i comandi disponibili\n" + Style.BRIGHT +
-                             "extract:" + Style.NORMAL + " Estrae uno studente dalla classe selezionata\n" + Style.BRIGHT +
-                             "adds [name] [surname]:" + Style.NORMAL + " Aggiunge uno studente nella classe selezionata\n" + Style.BRIGHT +
-                             "list:" + Style.NORMAL + " Mostra tutti gli studenti della classe selezionata\n" + Style.BRIGHT +
-                             "q:"  + Style.NORMAL + " Esce dal programma")
+        print(Fore.CYAN + Style.BRIGHT +
+             "help:" + Style.NORMAL + " Fa vedere i comandi disponibili\n" + Style.BRIGHT +
+             "extract:" + Style.NORMAL + " Estrae uno studente dalla classe selezionata\n" + Style.BRIGHT +
+             "adds [name] [surname]:" + Style.NORMAL + " Aggiunge uno studente nella classe selezionata\n" + Style.BRIGHT +
+             "list:" + Style.NORMAL + " Mostra tutti gli studenti della classe selezionata\n" + Style.BRIGHT +
+             "q:"  + Style.NORMAL + " Esce dal programma")
     elif choice[0] == "extract":
         print("WIP")
         pass
