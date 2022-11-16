@@ -19,7 +19,8 @@ while True:
         print(Fore.CYAN + Style.BRIGHT + "help:" + Style.NORMAL + " Fa vedere i comandi disponibili\n" + Style.BRIGHT +
                              "extract:" + Style.NORMAL + " Estrae uno studente dalla classe selezionata\n" + Style.BRIGHT +
                              "adds [name] [surname]:" + Style.NORMAL + " Aggiunge uno studente nella classe selezionata\n" + Style.BRIGHT +
-                             "list:" + Style.NORMAL + " Mostra tutti gli studenti della classe selezionata\n")
+                             "list:" + Style.NORMAL + " Mostra tutti gli studenti della classe selezionata\n" + Style.BRIGHT +
+                             "q:"  + Style.NORMAL + " Esce dal programma")
     elif choice[0] == "extract":
         print("WIP")
         pass
@@ -35,5 +36,7 @@ while True:
             print(Fore.RED + Style.BRIGHT + "Uno o piu parametri necessari mancanti! Prova 'adds nome cognome'")
     elif choice == "list":
         print("WIP")
+    elif choice[0] == "q":
+        break
     else:
         print(Fore.RED + Style.BRIGHT + "Comando inesistente")
