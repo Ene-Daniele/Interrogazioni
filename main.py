@@ -7,7 +7,6 @@ from colorama import Style
 from studente import Studente, Class
 import datetime
 
-
 #TODO: Ene > Colorare i print un pochino
 
 print(Style.BRIGHT + Fore.GREEN + " « Programmatore di interrogazioni » ")
